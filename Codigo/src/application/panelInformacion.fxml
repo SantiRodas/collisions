@@ -28,6 +28,6 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="rolTexto" layoutX="267.0" layoutY="85.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" />
+      <ChoiceBox fx:id="rolTexto" layoutX="267.0" layoutY="85.0" prefWidth="150.0" style="-fx-border-color: white;" />
    </children>
 </Pane>

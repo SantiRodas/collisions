@@ -11,49 +11,59 @@
 
 package model;
 
+import java.util.ArrayList;
+
 public class Persona {
-	
+
 	// --------------------------------------------------------------------------------------
-	
+
 	// CONSTANTES PARA UTILIZAR EN EL PROGRAMA
-	
+
 	public final static String ROL_PROFESOR = "Profesor";
 	public final static String ROL_ESTUDIANTE = "Estudiante";
-	
+
 	// --------------------------------------------------------------------------------------
-	
+
+	// RELACIONES
+
+	ArrayList<Calculo> calculos;
+
+	// --------------------------------------------------------------------------------------
+
 	// ATRIBUTOS DE LA CLASE PERSONA
-	
+
 	private String nombre;
-	
+
 	private String rol;
-	
+
 	// --------------------------------------------------------------------------------------
-	
+
 	// METODO CONSTRUCTOR DE LA CLASE PERSONA
-	
+
 	public Persona(String nombre, String rol) {
 
 		this.nombre = nombre;
-		
+
 		this.rol = rol;
-		
+
+		calculos = new ArrayList<>();
+
 	}
-	
+
 	// --------------------------------------------------------------------------------------
-	
+
 	// METODOS GET DE LA CLASE PERSONA
 
 	public String getNombre() {
 		return nombre;
 	}
-	
+
 	public String getRol() {
 		return rol;
 	}
-	
+
 	// --------------------------------------------------------------------------------------
-	
+
 	// METODOS SET DE LA CLASE PERSONA
 
 	public void setNombre(String nombre) {
@@ -63,7 +73,17 @@ public class Persona {
 	public void setRol(String rol) {
 		this.rol = rol;
 	}
-	
+
 	// --------------------------------------------------------------------------------------
-	
+
+	// METODO PARA AGREGAR CALCULO
+
+	public void agregarCalculo(double velocidadInicialA, double velocidadFinalA, double masaA, double velocidadInicialB, double velocidadFinalB, double masaB) {
+
+		calculos.add(new Calculo(velocidadInicialA, velocidadFinalA, masaA, velocidadInicialB, velocidadFinalB, masaB));
+
+	}
+
+	// --------------------------------------------------------------------------------------
+
 }

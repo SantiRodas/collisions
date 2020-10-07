@@ -21,9 +21,7 @@ public class Calculo {
 	
 	private double velocidadFinalA;
 	
-	private double masaInicialA;
-	
-	private double masaFinalA;
+	private double masaA;
 	
 	// ***************************************
 	
@@ -31,25 +29,22 @@ public class Calculo {
 	
 	private double velocidadFinalB;
 	
-	private double masaInicialB;
+	private double masaB;
 	
-	private double masaFinalB;
 	
 	// --------------------------------------------------------------------------------------
 	
 	// METODO CONSTRUCTOR DE LA CLASE CALCULO
 
-	public Calculo(double velocidadInicialA, double velocidadFinalA, double masaInicialA, double masaFinalA, double velocidadInicialB, double velocidadFinalB, double masaInicialB, double masaFinalB) {
+	public Calculo(double velocidadInicialA, double velocidadFinalA, double masaA, double velocidadInicialB, double velocidadFinalB, double masaB) {
 
 		this.velocidadInicialA = velocidadInicialA;
 		this.velocidadFinalA = velocidadFinalA;
-		this.masaInicialA = masaInicialA;
-		this.masaFinalA = masaFinalA;
+		this.masaA = masaA;
 		
 		this.velocidadInicialB = velocidadInicialB;
 		this.velocidadFinalB = velocidadFinalB;
-		this.masaInicialB = masaInicialB;
-		this.masaFinalB = masaFinalB;
+		this.masaB = masaB;
 		
 	}
 	
@@ -65,14 +60,10 @@ public class Calculo {
 		return velocidadFinalA;
 	}
 	
-	public double getMasaInicialA() {
-		return masaInicialA;
+	public double getMasaA() {
+		return masaA;
 	}
-	
-	public double getMasaFinalA() {
-		return masaFinalA;
-	}
-	
+		
 	// ***************************************
 	
 	public double getVelocidadInicialB() {
@@ -83,14 +74,10 @@ public class Calculo {
 		return velocidadFinalB;
 	}
 	
-	public double getMasaInicialB() {
-		return masaInicialB;
+	public double getMasaB() {
+		return masaB;
 	}
-	
-	public double getMasaFinalB() {
-		return masaFinalB;
-	}
-	
+		
 	// --------------------------------------------------------------------------------------
 	
 	// METODOS SET DE LA CLASE CALCULO
@@ -103,12 +90,8 @@ public class Calculo {
 		this.velocidadFinalA = velocidadFinalA;
 	}
 
-	public void setMasaInicialA(double masaInicialA) {
-		this.masaInicialA = masaInicialA;
-	}
-
-	public void setMasaFinalA(double masaFinalA) {
-		this.masaFinalA = masaFinalA;
+	public void setMasaA(double masaA) {
+		this.masaA = masaA;
 	}
 	
 	// ***************************************
@@ -121,12 +104,8 @@ public class Calculo {
 		this.velocidadFinalB = velocidadFinalB;
 	}
 
-	public void setMasaInicialB(double masaInicialB) {
-		this.masaInicialB = masaInicialB;
-	}
-
-	public void setMasaFinalB(double masaFinalB) {
-		this.masaFinalB = masaFinalB;
+	public void setMasaB(double masaB) {
+		this.masaB = masaB;
 	}
 	
 	// --------------------------------------------------------------------------------------
