@@ -85,5 +85,33 @@ public class Persona {
 	}
 
 	// --------------------------------------------------------------------------------------
+	
+	// METODO PARA ENCONTRAR LA VELOCIDAD FINAL DE LA PRIMERA PARTICULA
+	
+	public double vfc1 (double m1, double m2, double vi1, double vi2) {
+		
+		double total = 0;
+		
+		total = ((m1 - m2 / m1 + m2)*vi1) + ((2*m2 / m1 + m2) * vi2);
+		
+		return total;
+		
+	}
+	
+	// --------------------------------------------------------------------------------------
+	
+	// METODO PARA ENCONTRAR LA VELOCIDAD FINAL DE LA SEGUNDA PARTICULA
+	
+	public double vfc2 (double m1, double m2, double vi1, double vi2, double vf1) {
+		
+		double total = 0;
+		
+		total = ((m1 / m2) * (vi1 - vf1)) + vi2;
+		
+		return total;
+		
+	}
+	
+	// --------------------------------------------------------------------------------------
 
 }

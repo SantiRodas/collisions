@@ -17,8 +17,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
+import model.Persona;
 
 public class ControladoraInformacion {
+	
+	// --------------------------------------------------------------------------------------
+	
+	// RELACIONES CON OTRAS CLASES
+	
+	Persona persona;
 
 	// --------------------------------------------------------------------------------------
 	
@@ -121,7 +128,33 @@ public class ControladoraInformacion {
 
 	@FXML
 	public void calcularvf(ActionEvent event) {
-
+				
+		double velocidadInicial1 = Double.parseDouble(vivica.getText());
+		
+		double velocidadInicial2 = Double.parseDouble(vivicb.getText());
+		
+		double masa1 = Double.parseDouble(vimca.getText());
+		
+		double masa2 = Double.parseDouble(vimcb.getText());
+		
+		// *********************************************
+		
+		double resultado1 = persona.vfc1(masa1, masa2, velocidadInicial1, velocidadInicial2);
+		
+		double resultado2 = persona.vfc2(masa1, masa2, velocidadInicial1, velocidadInicial2, resultado1);
+		
+		// *********************************************
+		
+		String resultado1Mostrar = String.valueOf(resultado1);
+		
+		String resultado2Mostrar = String.valueOf(resultado2);
+		
+		// *********************************************
+		
+		vivfca.setText(resultado1Mostrar);
+		
+		vivfcb.setText(resultado2Mostrar);
+		
 	}
 	
 	// --------------------------------------------------------------------------------------
