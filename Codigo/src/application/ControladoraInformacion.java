@@ -129,7 +129,15 @@ public class ControladoraInformacion {
 	@FXML
 	public void calcularvf(ActionEvent event) {
 				
-		double velocidadInicial1 = Double.parseDouble(vivica.getText());
+		
+	}
+	
+	// --------------------------------------------------------------------------------------
+
+	@FXML
+	public void calcularvi(ActionEvent event) {
+		
+double velocidadInicial1 = Double.parseDouble(vivica.getText());
 		
 		double velocidadInicial2 = Double.parseDouble(vivicb.getText());
 		
@@ -154,13 +162,6 @@ public class ControladoraInformacion {
 		vivfca.setText(resultado1Mostrar);
 		
 		vivfcb.setText(resultado2Mostrar);
-		
-	}
-	
-	// --------------------------------------------------------------------------------------
-
-	@FXML
-	public void calcularvi(ActionEvent event) {
 
 	}
 
