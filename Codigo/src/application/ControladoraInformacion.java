@@ -28,7 +28,7 @@ public class ControladoraInformacion {
 	// RELACIONES CON OTRAS CLASES
 
 	Persona persona;
-
+	
 	// --------------------------------------------------------------------------------------
 
 	// METODO CONSTRUCTOR
@@ -36,7 +36,7 @@ public class ControladoraInformacion {
 	public ControladoraInformacion() {
 
 		persona = new Persona("", "");
-
+				
 	}
 
 	// --------------------------------------------------------------------------------------
@@ -176,6 +176,8 @@ public class ControladoraInformacion {
 			vivfca.setText(resultado1Mostrar);
 
 			vivfcb.setText(resultado2Mostrar);
+			
+			persona.agregarCalculo(velocidadInicial1, resultado1, masa1, velocidadInicial2, resultado2, masa2);
 
 		} catch(NumberFormatException e1) {
 			
@@ -203,5 +205,5 @@ public class ControladoraInformacion {
 	}
 
 	// --------------------------------------------------------------------------------------
-
+	
 }

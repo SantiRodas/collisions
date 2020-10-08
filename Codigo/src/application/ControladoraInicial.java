@@ -63,7 +63,7 @@ public class ControladoraInicial {
 		controladora = new SegundaControladora();
 
 		cuadro = new Rectangle();
-
+		
 		actualizarBarra();
 
 	}
@@ -109,6 +109,8 @@ public class ControladoraInicial {
 	public void iniciar(ActionEvent event) {
 
 		BarraHilo bh = new BarraHilo(barra, this, 20);
+		
+		label1.setText("Ejecutando componentes y pruebas del sistema");
 
 		bh.start();
 
@@ -149,7 +151,9 @@ public class ControladoraInicial {
 		botonContinuar.setDisable(false);
 
 		barra.setValidacion(false);
-
+		
+		label1.setVisible(false);
+		
 	}
 
 	// ---------------------------------------------------------------------------------------

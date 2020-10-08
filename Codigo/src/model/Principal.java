@@ -42,5 +42,21 @@ public class Principal {
 	}
 	
 	// --------------------------------------------------------------------------------------
+	
+	// METODOS GET DE LA CLASE PRINCIPAL
+
+	public ArrayList<Persona> getPersonas() {
+		return personas;
+	}
+	
+	// --------------------------------------------------------------------------------------
+	
+	// METODOS SET DE LA CLASE PRINCIPAL
+
+	public void setPersonas(ArrayList<Persona> personas) {
+		this.personas = personas;
+	}
+	
+	// --------------------------------------------------------------------------------------
 
 }

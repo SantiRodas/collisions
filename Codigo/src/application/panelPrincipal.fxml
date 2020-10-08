@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TabPane prefHeight="452.0" prefWidth="751.0" tabClosingPolicy="UNAVAILABLE">
@@ -34,11 +33,11 @@
                         <Label layoutX="43.0" layoutY="194.0" text="Masa" textFill="WHITE" />
                         <Label layoutX="139.0" layoutY="158.0" text="Cuepo A" textFill="WHITE" />
                         <Label layoutX="138.0" layoutY="225.0" text="Cuerpo B" textFill="WHITE" />
-                        <Line endX="218.0" layoutX="115.0" layoutY="269.0" startX="-108.0" stroke="WHITE" />
+                        <Line endX="231.0" layoutX="115.0" layoutY="269.0" startX="-108.0" stroke="WHITE" />
                         <TextField fx:id="vimca" layoutX="225.0" layoutY="153.0" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" />
                         <TextField fx:id="vimcb" layoutX="225.0" layoutY="220.0" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" />
                         <Button fx:id="botonvi" layoutX="484.0" layoutY="355.0" mnemonicParsing="false" onAction="#calcularvi" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" text="Calcular" />
-                        <Line endX="207.0" endY="136.0" layoutX="126.0" layoutY="279.0" startX="207.0" startY="-9.0" stroke="WHITE" />
+                        <Line endX="207.0" endY="136.0" layoutX="139.0" layoutY="278.0" startX="207.0" startY="-9.0" stroke="WHITE" />
                         <Label layoutX="14.0" layoutY="333.0" text="Velocidad final" textFill="WHITE" />
                         <Label layoutX="139.0" layoutY="301.0" text="Cuepo A" textFill="WHITE" />
                         <Label layoutX="138.0" layoutY="368.0" text="Cuerpo B" textFill="WHITE" />
@@ -47,7 +46,7 @@
                         <Label layoutX="333.0" layoutY="52.0" text="m/s" textFill="WHITE" />
                         <Label layoutX="292.0" layoutY="333.0" text="m/s" textFill="WHITE" />
                         <Label layoutX="339.0" layoutY="194.0" text="kg" textFill="WHITE" />
-                        <ImageView fitHeight="43.0" fitWidth="61.0" layoutX="344.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="43.0" fitWidth="61.0" layoutX="357.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@chulo.png" />
                            </image>
@@ -74,11 +73,11 @@
                         <Label layoutX="43.0" layoutY="194.0" text="Masa" textFill="WHITE" />
                         <Label layoutX="139.0" layoutY="158.0" text="Cuepo A" textFill="WHITE" />
                         <Label layoutX="138.0" layoutY="225.0" text="Cuerpo B" textFill="WHITE" />
-                        <Line endX="218.0" layoutX="115.0" layoutY="269.0" startX="-108.0" stroke="WHITE" />
+                        <Line endX="238.0" layoutX="115.0" layoutY="269.0" startX="-108.0" stroke="WHITE" />
                         <TextField fx:id="vfmca" layoutX="225.0" layoutY="153.0" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" />
                         <TextField fx:id="vfmcb" layoutX="225.0" layoutY="220.0" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" />
                         <Button fx:id="botonvf" layoutX="484.0" layoutY="355.0" mnemonicParsing="false" onAction="#calcularvf" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" text="Calcular" />
-                        <Line endX="207.0" endY="136.0" layoutX="126.0" layoutY="279.0" startX="207.0" startY="-9.0" stroke="WHITE" />
+                        <Line endX="207.0" endY="136.0" layoutX="146.0" layoutY="279.0" startX="207.0" startY="-9.0" stroke="WHITE" />
                         <Label layoutX="14.0" layoutY="333.0" text="Velocidad inicial" textFill="WHITE" />
                         <Label layoutX="139.0" layoutY="301.0" text="Cuepo A" textFill="WHITE" />
                         <Label layoutX="138.0" layoutY="368.0" text="Cuerpo B" textFill="WHITE" />
@@ -87,7 +86,7 @@
                         <Label layoutX="333.0" layoutY="52.0" text="m/s" textFill="WHITE" />
                         <Label layoutX="292.0" layoutY="333.0" text="m/s" textFill="WHITE" />
                         <Label layoutX="339.0" layoutY="194.0" text="kg" textFill="WHITE" />
-                        <ImageView fitHeight="43.0" fitWidth="61.0" layoutX="346.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="43.0" fitWidth="61.0" layoutX="357.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@chulo.png" />
                            </image>
@@ -114,11 +113,11 @@
                         <Label layoutX="18.0" layoutY="194.0" text="Velocidad final" textFill="WHITE" />
                         <Label layoutX="139.0" layoutY="158.0" text="Cuepo A" textFill="WHITE" />
                         <Label layoutX="138.0" layoutY="225.0" text="Cuerpo B" textFill="WHITE" />
-                        <Line endX="218.0" layoutX="115.0" layoutY="269.0" startX="-108.0" stroke="WHITE" />
+                        <Line endX="233.0" layoutX="115.0" layoutY="269.0" startX="-108.0" stroke="WHITE" />
                         <TextField fx:id="vvfca" layoutX="225.0" layoutY="153.0" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" />
                         <TextField fx:id="vvfcb" layoutX="225.0" layoutY="220.0" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" />
                         <Button fx:id="vboton" layoutX="484.0" layoutY="355.0" mnemonicParsing="false" onAction="#calcularv" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;" text="Calcular" />
-                        <Line endX="207.0" endY="136.0" layoutX="126.0" layoutY="279.0" startX="207.0" startY="-9.0" stroke="WHITE" />
+                        <Line endX="207.0" endY="136.0" layoutX="142.0" layoutY="279.0" startX="207.0" startY="-9.0" stroke="WHITE" />
                         <Label layoutX="43.0" layoutY="333.0" text="Masa" textFill="WHITE" />
                         <Label layoutX="139.0" layoutY="301.0" text="Cuepo A" textFill="WHITE" />
                         <Label layoutX="138.0" layoutY="368.0" text="Cuerpo B" textFill="WHITE" />
@@ -127,7 +126,7 @@
                         <Label layoutX="333.0" layoutY="52.0" text="m/s" textFill="WHITE" />
                         <Label layoutX="292.0" layoutY="333.0" text="kg" textFill="WHITE" />
                         <Label layoutX="339.0" layoutY="194.0" text="m/s" textFill="WHITE" />
-                        <ImageView fitHeight="43.0" fitWidth="61.0" layoutX="341.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="43.0" fitWidth="61.0" layoutX="357.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@chulo.png" />
                            </image>
