@@ -92,7 +92,7 @@ public class Persona {
 		
 		double total = 0;
 		
-		total = ((m1 - m2 / m1 + m2)*vi1) + ((2*m2 / m1 + m2) * vi2);
+		total = ((((m1 - m2) / (m1 + m2))*vi1) + (((2*m2) / (m1 + m2)) * vi2));
 		
 		return total;
 		

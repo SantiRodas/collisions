@@ -13,43 +13,45 @@ package application;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import model.Persona;
 
 public class ControladoraInformacion {
-	
+
 	// --------------------------------------------------------------------------------------
-	
+
 	// RELACIONES CON OTRAS CLASES
-	
+
 	Persona persona;
-	
+
 	// --------------------------------------------------------------------------------------
-	
+
 	// METODO CONSTRUCTOR
-	
+
 	public ControladoraInformacion() {
-		
+
 		persona = new Persona("", "");
-		
+
 	}
 
 	// --------------------------------------------------------------------------------------
-	
+
 	// TAB'S DEL SISTEMA
 
 	@FXML
 	private Tab inicialesTab;
-	
+
 	@FXML
 	private Tab finalesTab;
-	
+
 	@FXML
 	private Tab velocidadesTab;
-	
+
 	// --------------------------------------------------------------------------------------
 
 	@FXML
@@ -63,9 +65,9 @@ public class ControladoraInformacion {
 
 	@FXML
 	private TextField vimcb;
-	
+
 	// *********************************************
-	
+
 	@FXML
 	private TextField vfvfca;
 
@@ -74,12 +76,12 @@ public class ControladoraInformacion {
 
 	@FXML
 	private TextField vfmca;
-	
+
 	@FXML
 	private TextField vfmcb;
-	
+
 	// *********************************************
-	
+
 	@FXML
 	private TextField vvica;
 
@@ -96,13 +98,13 @@ public class ControladoraInformacion {
 
 	@FXML
 	private Button botonvi;
-	
+
 	@FXML
 	private Button botonvf;
-	
+
 	@FXML
 	private Button vboton;
-	
+
 	// --------------------------------------------------------------------------------------
 
 	@FXML
@@ -110,7 +112,7 @@ public class ControladoraInformacion {
 
 	@FXML
 	private Label vivfcb;
-	
+
 	// *********************************************
 
 	@FXML
@@ -118,7 +120,7 @@ public class ControladoraInformacion {
 
 	@FXML
 	private Label vfvicb;
-	
+
 	// *********************************************
 
 	@FXML
@@ -126,52 +128,77 @@ public class ControladoraInformacion {
 
 	@FXML
 	private Label vmcb;
-	
+
 	// --------------------------------------------------------------------------------------
 
 	@FXML
 	public void calcularv(ActionEvent event) {
 
 	}
-	
+
 	// --------------------------------------------------------------------------------------
 
 	@FXML
 	public void calcularvf(ActionEvent event) {
-				
-		
+
+
 	}
-	
+
 	// --------------------------------------------------------------------------------------
 
 	@FXML
 	public void calcularvi(ActionEvent event) {
-		
-		double velocidadInicial1 = Double.parseDouble(vivica.getText());
-		
-		double velocidadInicial2 = Double.parseDouble(vivicb.getText());
-		
-		double masa1 = Double.parseDouble(vimca.getText());
-		
-		double masa2 = Double.parseDouble(vimcb.getText());
-		
-		// *********************************************
-		
-		double resultado1 = persona.vfc1(masa1, masa2, velocidadInicial1, velocidadInicial2);
-		
-		double resultado2 = persona.vfc2(masa1, masa2, velocidadInicial1, velocidadInicial2, resultado1);
-		
-		// *********************************************
-		
-		String resultado1Mostrar = String.valueOf(resultado1);
-		
-		String resultado2Mostrar = String.valueOf(resultado2);
-		
-		// *********************************************
-		
-		vivfca.setText(resultado1Mostrar);
-		
-		vivfcb.setText(resultado2Mostrar);
+
+		try {
+			
+			double velocidadInicial1 = Double.parseDouble(vivica.getText());
+
+			double velocidadInicial2 = Double.parseDouble(vivicb.getText());
+
+			double masa1 = Double.parseDouble(vimca.getText());
+
+			double masa2 = Double.parseDouble(vimcb.getText());
+
+			// *********************************************
+
+			double resultado1 = persona.vfc1(masa1, masa2, velocidadInicial1, velocidadInicial2);
+
+			double resultado2 = persona.vfc2(masa1, masa2, velocidadInicial1, velocidadInicial2, resultado1);
+
+			// *********************************************
+
+			String resultado1Mostrar = String.valueOf(resultado1);
+
+			String resultado2Mostrar = String.valueOf(resultado2);
+
+			// *********************************************
+
+			vivfca.setText(resultado1Mostrar);
+
+			vivfcb.setText(resultado2Mostrar);
+
+		} catch(NumberFormatException e1) {
+			
+			Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("Informacion importante");
+			alert.setHeaderText(null);
+			alert.setContentText("Datos invalidos, por favor revise las siguientes opciones: \n" +
+			"\n 1. La informacion no debe de tener ninguna letra." + 
+			"\n 2. Si utiliza decimales, por favor separelos con un punto." +
+			"\n 3. Ningun campo puede estar vacio");
+
+			alert.showAndWait();
+
+		} catch(NullPointerException e2) {
+			
+			Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("Informacion importante");
+			alert.setHeaderText(null);
+			alert.setContentText("Por favor llene todos los datos requeridos");
+
+			alert.showAndWait();
+
+		}
 
 	}
 
