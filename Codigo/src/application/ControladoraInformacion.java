@@ -26,6 +26,16 @@ public class ControladoraInformacion {
 	// RELACIONES CON OTRAS CLASES
 	
 	Persona persona;
+	
+	// --------------------------------------------------------------------------------------
+	
+	// METODO CONSTRUCTOR
+	
+	public ControladoraInformacion() {
+		
+		persona = new Persona("", "");
+		
+	}
 
 	// --------------------------------------------------------------------------------------
 	
@@ -137,7 +147,7 @@ public class ControladoraInformacion {
 	@FXML
 	public void calcularvi(ActionEvent event) {
 		
-double velocidadInicial1 = Double.parseDouble(vivica.getText());
+		double velocidadInicial1 = Double.parseDouble(vivica.getText());
 		
 		double velocidadInicial2 = Double.parseDouble(vivicb.getText());
 		
