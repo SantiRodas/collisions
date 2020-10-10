@@ -113,5 +113,48 @@ public class Persona {
 	}
 	
 	// --------------------------------------------------------------------------------------
+	
+	// METODO PARA ENCONTRAR LA VELOCIDAD INICIAL DE LA PRIMERA PARTICULA
+	
+	public double vic1 (double m1, double m2, double v1, double vo2) {
+		
+		double arriba = 0;
+		
+		double abajo = 0;
+		
+		double total = 0;
+		
+		arriba = ( ( v1 * ( m1 + m2 ) ) - ( vo2 * ( 2 * m1 ) ) ) ;
+		
+		abajo = m1 - m2;
+		
+		total = arriba / abajo ;
+		
+		return total;
+		
+	}
+	
+	// --------------------------------------------------------------------------------------
+	
+	// METODO PARA ENCONTRAR LA VELOCIDAD INICIAL DE LA SEGUNDA PARTICULA
+	
+	public double vic2 (double m1, double m2, double v1, double v2) {
+		
+		double arriba = 0;
+		
+		double abajo = 0;
+		
+		double total = 0;
+		
+		arriba = ( ( m1 * v2 ) - ( m2 * v2 ) - ( (2 * m1) * v1) ) ;
+		
+		abajo = m1 + m2 ;
+		
+		total = ( ( arriba / abajo ) * - 1 );
+		
+		return total;
+	}
+	
+	// --------------------------------------------------------------------------------------
 
 }
