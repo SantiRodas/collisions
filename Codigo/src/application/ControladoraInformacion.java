@@ -129,9 +129,9 @@ public class ControladoraInformacion {
 
 			// *********************************************
 			
-			double resultado2 = persona.vic2(m1, m2, vf1, vf2);
+			double resultado1 = persona.vic1(m1, m2, vf1, vf2);
 			
-			double resultado1 = persona.vic1(m1, m2, vf1, resultado2);
+			double resultado2 = persona.vic2(m1, m2, vf1, vf2, resultado1);
 
 			// *********************************************
 

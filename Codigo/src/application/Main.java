@@ -44,7 +44,7 @@ public class Main extends Application {
 		
 		try {
 
-			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("panelInicio.fxml"));
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("PanelInicio.fxml"));
 
 			fxmlLoader.setController(controladora);
 
