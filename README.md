@@ -1,38 +1,38 @@
-# Colisiones
+# Collisions
 
-Este programa funcional permite calcular la velocidad inicial o final de dos cuerpos que colisionan.
+This functional program allows to calculate the initial or final velocity of two colliding bodies.
 
-## Requisitos del programa
+## Program requirements
 
-* Software Java instalado.
-* Eclipse funcional.
+* Java software installed.
+* Eclipse functional.
 * JavaFx.
 
-## Utilizar el programa
+## Use the program
 
-* Clonar el repositorio.
-* Acceder a la carpeta "Codigo"
-* Importar a Eclipse.
-* Ejecutar la clase Main en el paquete application.
+* Clone the repository.
+* Access the folder "Code"
+* Import to Eclipse.
+* Execute the Main class in the application package.
 
-## Herramientas de uso
+## Usage tools
 
 * Scene Builder
 * Eclipse
 * GitHub
 
-## Autores
+## Authors
 
 * Santiago Rodas Rodriguez
 * Diana Carjaval
 * Julian Gonzales
 * Felipe Gomez
 
-## Licencia
-Este proyecto esta bajo la licencia (Creative Commons Zero v1.0 Universal) 
-Mas informacion en: https://github.com/SantiRodas/Colisiones/blob/master/LICENSE
+## License
+This project is under the license (Creative Commons Zero v1.0 Universal)
+More information in: https://github.com/SantiRodas/Colisiones/blob/master/LICENSE
 
-## Ejemplos de ventanas
+## Window examples
 
 ![](https://github.com/SantiRodas/Colisiones/blob/master/Extras/Imagenes/1.JPG)
 
