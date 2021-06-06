@@ -29,8 +29,7 @@ This functional program allows to calculate the initial or final velocity of two
 * Felipe Gomez
 
 ## License
-This project is under the license (Creative Commons Zero v1.0 Universal)
-More information in: https://github.com/SantiRodas/Colisiones/blob/master/LICENSE
+* [Creative Commons Zero v1.0 Universal](https://github.com/SantiRodas/Colisiones/blob/master/LICENSE)
 
 ## Window examples
 
